@@ -22,3 +22,24 @@ win the championship or not.
   
   * Won_Championship [Target] - 1 signifies winning the game
                                 0 signifies losing the game
+                                
+### Approach
+ * Logistic Regression :
+    * feature 'ID' is irrelevant. So It is removed.
+    * Hightest Effective feature is ' Number_Of_First_Round_Draft_Picks'.
+    * Model is created using Logistic Regression as it is a binary classification problem.
+    * One more feature 'Previous_SB_Wins' is removed.
+    * Again logistic model is created that gives better classification accuracy as compare to previous model.
+    * Result of test.csv are in 'resultV0.5.csv'.
+ * SVM : 
+    * feature 'ID' is irrelevant. So It is removed.
+    * Hightest Effective feature is ' Number_Of_First_Round_Draft_Picks'.
+    * Model is created using SVM.
+    * k-fold cross validation is used where k=10 to search over a list of features kernel, C and gamma.
+    * Best model is selected using GridSearchCV and tested using validation set.
+    * Results of test.csv are in 'resultV1.csv'.
+    * One more feature 'Previous_SB_Wins' is removed.
+    * k-fold cross validation is used where k=10 to search over a list of features kernel, C and gamma.
+    * Best model is selected using GridSearchCV and tested using validation set that gives better classification accuracy
+      as compare to previous model.
+    * Results of test.csv are in 'resultActual.csv'. 
