@@ -26,8 +26,8 @@ The dataset has the following columns:
 ### Data description
 The data folder consists of the following two .csv files:
 
-train.csv - (32165x 7)
-test.csv - (10760x6)
+ * train.csv - (32165x 7)
+ * test.csv - (10760x6)
 
 
 ### Evaluation metric
