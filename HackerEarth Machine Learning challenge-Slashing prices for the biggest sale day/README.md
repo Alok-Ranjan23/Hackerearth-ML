@@ -30,3 +30,22 @@ The dataset folder consists of the following files:
  
 ##### Evaluation metric
  * score = max(0,(100-mean_squared_log_error(actual_values,predicted_values))) 
+ 
+##### Approch
+
+1. Pre-processing
+ * Date column is formatted and normalized.
+ * Redundant Id column is removed.
+ * Validation set is created. (25%--validation and 75% --- training)
+2. Feature Selection
+ * All features are selected after pre-processing.
+3. Model Selection
+ * Baseline for Linear Model, SVR, Lasso, Ridge and MLP is created.
+ * Choosen model is MLP.
+4. Prediction on Actual test data 
+ * An MLP model with 11 layers is created.
+ * The whole train_data is used for training with validation split set as 0.25.
+ * Validation loss(mean_squared_logarithmic_error) is monitored. 
+ * Weights for best loss is stored.
+ * Best weights are used to get the prediction for test_data and submission.csv is created as specified.
+ * Stored
