@@ -48,4 +48,3 @@ The dataset folder consists of the following files:
  * Validation loss(mean_squared_logarithmic_error) is monitored. 
  * Weights for best loss is stored.
  * Best weights are used to get the prediction for test_data and submission.csv is created as specified.
- * Stored
