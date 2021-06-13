@@ -6,3 +6,4 @@ This repository contains solution of monthly hackerearth machine learning challe
 * Pet Adoption [contest-page](https://www.hackerearth.com/problem/machine-learning/pet-adoption-9-5838c75b/?layout=old)
 * Predict the employee burn out rate: [contest-page](https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-predict-burnout-rate/machine-learning/predict-the-employee-burn-out-rate-7-6340b4e3/)
 * Predict the churn risk rate: [contest_page](https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-predict-customer-churn/machine-learning/predict-the-churn-risk-rate-11-fb7a760d/)
+* Predict the condition and insurance amount: [JUNE-ML](https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-vehicle-insurance-claim/machine-learning/predict-the-condition-and-insurance-amount-21-fb647347/)
