@@ -18,3 +18,13 @@ APPROACH::
 * I have done the serach the best parameter settings for **Lasso** with one-fold approach.
 * I have then trained the whole TRAIN_DATA using the best **Lasso model**
 * I have predicted the Condition for TEST_DATA using best **Lasso model** and created the submission file's next part.
+
+### Evaluation Metric
+##### For predictions of the Condition column
+* score1 = max(0, 100*metrics.f1_score(actualConditions, predictedConditions, average="micro"))
+##### For predictions of the Amount column
+* score2 = max(0, 100*metrics.r2_score(actualAmount, predictedAmount))
+##### final_score = (score1/2)+(score2/2)
+
+### Result
+* [3rd Rank](https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-vehicle-insurance-claim/leaderboard/predict-the-condition-and-insurance-amount-21-fb647347/)
